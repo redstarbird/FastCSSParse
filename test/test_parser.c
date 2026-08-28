@@ -1,6 +1,6 @@
 #include "testing.h"
 #include "../src/Lexer.h"
-#include "../src/CSSParser.h"
+#include "../src/Parser.h"
 
 void test_parser_detects_missing_semicolon()
 {
