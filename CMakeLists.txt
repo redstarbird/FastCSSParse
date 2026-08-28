@@ -4,12 +4,12 @@ project(ArrowCSS VERSION 0.1.0 LANGUAGES C)
 add_subdirectory(external/ArenaAllocator)
 
 add_library(ArrowCSS STATIC 
-src/CSSParser.c
+src/Parser.c
     )
 
 target_sources(ArrowCSS PRIVATE
     src/Lexer.c
-    src/CSSParser.c
+    src/Parser.c
     src/Generator.c
     src/AST.c
 )
