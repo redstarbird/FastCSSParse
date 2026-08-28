@@ -1,7 +1,7 @@
 #ifndef LEXER_H
 #define LEXER_H
 
-#include "CSSAST.h"
+#include "AST.h"
 #include <stddef.h>
 #include <stdbool.h>
 #include <StringPool.h>

@@ -1,6 +1,6 @@
 #ifndef PARSER_H
 #define PARSER_H
-#include "CSSAST.h"
+#include "AST.h"
 #include "../src/Lexer.h"
 #include "arrowcss.h"
 

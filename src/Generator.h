@@ -3,7 +3,7 @@
 
 #include <stdlib.h>
 #include <stdbool.h>
-#include "CSSAST.h"
+#include "AST.h"
 #include "StringPool.h"
 #include "../include/arrowcss.h"
 
