@@ -6,7 +6,7 @@
 
 #include <stddef.h>
 #include <stdbool.h>
-#include <MemoryArena.h>
+#include <MicroArena.h>
 #include <StringPool.h>
 
 // Represents a position in a file
