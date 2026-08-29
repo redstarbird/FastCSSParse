@@ -72,7 +72,7 @@ def generate():
     # Create STB-style single header
     with open(f"{BUILD_FOLDER}/{SINGLE_HEADER_FOLDER}/{HEADER_NAME}", "w") as f:
         # Inject comment message at the top
-        f.write("/* Micro Arena */\n")
+        f.write("/* ArrowCSS */\n")
         f.write("/*In one C/C++ file, do: #define ARROWCSS_IMPLEMENTATION*/\n")
 
         # Header content
