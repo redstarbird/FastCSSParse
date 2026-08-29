@@ -10,3 +10,6 @@ build/
 # IDE and editor files
 .vscode/
 .idea/s
+
+# Release build directory
+release_build/
