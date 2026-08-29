@@ -86,6 +86,16 @@ def generate():
         f.write("#ifdef ARROWCSS_IMPLEMENTATION\n\n")
         f.write(source_content)
         f.write("#endif\n")
+        
+        with open(f"LICENSE", 'rt') as license:
+            f.write("\n/*\n")
+            f.write("===============================================================================\n")
+            f.write("This software is available under the following license:\n\n")
+
+            f.write(license.read())
+        f.write("\n===============================================================================\n")
+        
+        f.write("*/")
 
 if __name__ == "__main__":
     generate()
