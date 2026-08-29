@@ -8,6 +8,7 @@
 #include <stdbool.h>
 #include <MicroArena.h>
 #include <StringPool.h>
+#include "../include/arrowcss.h"
 
 // Represents a position in a file
 typedef struct FilePosition
@@ -110,20 +111,5 @@ struct ASTNode
         } at_rule;
     } data;
 };
-
-/** @brief Structure representing the entire CSS Abstract Syntax Tree (AST) */
-typedef struct CSSAST
-{
-    /** @brief Internal, read-only: String pool for managing string literals */
-    struct StringPool *stringPool;
-    /** @brief Internal, read-only: Memory arena for allocating AST nodes */
-    struct MemoryArena *arena;
-    /** @brief Read-only: Root node of the AST */
-    struct ASTNode *root;
-    /** @brief Internal, read-only: Tracks the ownership of the memory arena */
-    bool ownsArena;
-    /** @brief Internal, read-only: Tracks the ownership of the string pool */
-    bool ownsStringPool;
-} CSSAST;
 
 #endif // CSSAST_H

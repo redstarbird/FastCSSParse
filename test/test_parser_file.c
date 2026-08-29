@@ -1,5 +1,5 @@
 #include "testing.h"
-#include "arrowcss.h"
+#include "../src/AST.h"
 
 // Prints a specific depth of indent
 static void PrintIndent(int depth)
